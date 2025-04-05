@@ -5,24 +5,29 @@ const Projects = () => {
   const projects = [
     {
       title: 'AI based Smart Interview Preparation App (PrepSmart)',
-      technologies: ['ReactJS', 'NodeJS', 'CSS'],
-      description: 'Designed and developed a scalable smart interview preparation platform. The platform features AI-powered feedback systems leveraging machine learning to analyze code and oral interview responses, along with speech-to-text conversion for technical assessments. Real-time interview simulations were implemented using WebSocket for video recording, question narration, and performance tracking'},
+      technologies: ['ReactJS', 'NodeJS', 'CSS', 'MongoDB', 'TypeScript'],
+      description: 'Designed and developed a scalable smart interview preparation platform. The platform features AI-powered feedback systems leveraging machine learning to analyze code and oral interview responses, along with speech-to-text conversion for technical assessments. Real-time interview simulations were implemented using WebSocket for video recording, question narration, and performance tracking',
+    link: 'https://github.com/gaddamvivek/SmartPrep_Interview-Platform'},
     {
       title: 'E-Commerce Application ',
-      technologies: ['Python', 'SQL', 'Docker'],
-      description: 'Developed a user-friendly e-commerce platform with seamless UI/UX, using MongoDB for storage and Docker for containerization'},
+      technologies: ['ReactJS', 'ExpressJS', 'Docker', 'Caddy', 'AWS', 'JWT'],
+      description: 'Developed a user-friendly e-commerce platform with seamless UI/UX, using MongoDB for storage and Docker for containerization',
+    link: 'https://github.com/gaddamvivek/SoleCraft_E-Commerce-Platform'},
     {
       title: 'Dual Communication System for Device Interaction',
-      technologies: ['Python','SAS Studio', 'Excel'],
-      description: '{Developed a dual communication system using TCP/IP, pipes, and sockets for reliable device interaction and optimized data exchange'},
+      technologies: ['C Language', 'Operating Systems'],
+      description: '{Developed a dual communication system using TCP/IP, pipes, and sockets for reliable device interaction and optimized data exchange',
+    link: 'https://drive.google.com/file/d/1u0GFZLvrYPi8KSu8wArtWn19nftSd4yg/view?usp=sharing'},
     {
       title: 'Smart Precision Farming Using IoT Data Analytics',
-      technologies: ['Python','SAS Studio', 'Excel'],
-      description: 'Developed precision farming solution using machine learning, Data Analysis and IoT, achieving 90\% accuracy in predicting optimal crop resource allocation'},
+      technologies: ['Python','Android Studio', 'JavaScript', 'IoT', 'Selenium'],
+      description: 'Developed precision farming solution using machine learning, Data Analysis and IoT, achieving 90\% accuracy in predicting optimal crop resource allocation',
+    link: 'https://www.philstat.org/index.php/MSEA/article/view/1450'},
     {
       title: 'Algorithm Visualizer',
-      technologies: ['Python','SAS Studio', 'Excel'],
-      description: 'Developed a website for sorting algorithms, providing visualization and customizations on a website'}
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      description: 'Developed a website for sorting algorithms, providing visualization and customizations on a website',
+      link: 'https://gaddamvivek.github.io/Sorting-Visualiser.io/'}
   ];
 
   return (
@@ -38,14 +43,18 @@ const Projects = () => {
                 {project.technologies.join(' • ')}
               </div>
               <p>{project.description}</p>
-              <a href="#" className="btn">View Project</a>
+              <a 
+                href={project.link || '#'} 
+                className="btn"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
           ))}
         </div>
         
-        <div className="view-all">
-          <a href="localhost:8000/project/products-analytic-model" className="btn">View All Projects</a>
-        </div>
       </div>
     </section>
   );
