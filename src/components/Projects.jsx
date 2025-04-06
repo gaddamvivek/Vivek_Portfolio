@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: 'Smart Precision Farming Using IoT Data Analytics',
       technologies: ['Python','Android Studio', 'JavaScript', 'IoT', 'Selenium'],
-      description: 'Developed precision farming solution using machine learning, Data Analysis and IoT, achieving 90\% accuracy in predicting optimal crop resource allocation',
+      description: 'Developed precision farming solution using machine learning, Data Analysis and IoT, achieving 90% accuracy in predicting optimal crop resource allocation',
     link: 'https://www.philstat.org/index.php/MSEA/article/view/1450'},
     {
       title: 'Algorithm Visualizer',

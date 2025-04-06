@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/Contact.css';
+import { init, sendForm } from '@emailjs/browser';
+
+// Initialize EmailJS with your User ID (replace with your actual ID)
+init(process.env.REACT_APP_EMAILJS_USER_ID);
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,25 +12,38 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
-    alert('Message sent successfully!');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+    setIsSubmitting(true);
+
+    sendForm(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      e.target,
+      process.env.REACT_APP_EMAILJS_USER_ID
+    )
+    .then(() => {
+      alert('Message sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      alert('Failed to send message. Please try again later.');
+      console.error('Error:', error);
+    })
+    .finally(() => {
+      setIsSubmitting(false);
     });
   };
 
@@ -89,7 +106,13 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+                className={isSubmitting ? 'submitting' : ''}
+              >
+                {isSubmitting ? 'Sending...' : 'Submit'}
+              </button>
             </form>
           </div>
         </div>
