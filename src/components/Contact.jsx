@@ -84,6 +84,7 @@ const Contact = () => {
                   placeholder="Your Email"
                   value={formData.email}
                   onChange={handleChange}
+                  required
                 />
               </div>
               <div className="form-group">
