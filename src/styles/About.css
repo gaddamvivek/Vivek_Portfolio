@@ -1,7 +1,9 @@
 /* About.css */
 .about {
   padding: 4rem 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(215, 224, 226)
+
 }
 
 .about .container {
@@ -64,7 +66,7 @@
 
 .about .about-text blockquote {
   font-style: italic;
-  color: #7f8c8d;
+  color: black;
   border-left: 4px solid #3498db;
   padding-left: 1.5rem;
   margin: 2rem 0;

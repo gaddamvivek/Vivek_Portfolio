@@ -1,19 +1,21 @@
 /* Contact.css */
 .contact {
-    padding: 4rem 0;
-    background-color: white;
+    /* padding: 4rem 0; */
+    background-color: rgb(215, 224, 226);
   }
   
   .contact .container {
     max-width: 1200px;
+   
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2em 2rem;
+ 
   }
   
   .contact .section-title {
     font-size: 2.5rem;
     color: #2c3e50;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
@@ -22,7 +24,10 @@
   
   .contact-container {
     display: flex;
-    gap: 3rem;
+    gap: 5px;
+    border-radius: 8%;
+    padding: 2rem;
+    background-color: white;
   }
   
   @media (max-width: 768px) {
@@ -33,6 +38,7 @@
   
   .contact-info {
     flex: 1;
+    padding-left: 50px;
   }
   
   .contact-info h3 {
@@ -49,6 +55,8 @@
   
   .contact-form {
     flex: 1;
+    padding-right: 50px;
+    padding-bottom: 13px;
   }
   
   .contact-form h3 {

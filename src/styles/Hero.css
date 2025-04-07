@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-color: white;
+  background-color: rgb(215, 224, 226);
 }
 
 .hero-content {
@@ -16,7 +16,7 @@
   top: 120px;
   left: 0;
   background-image: url('../Assets/pic.jpg');
-  background-color: rgb(215, 224, 226);
+  background-color: rgb(222, 234, 237);
   background-size: contain;
   background-position: 8% 10%; /* Adjusted to move left and down */
   background-repeat: no-repeat;
