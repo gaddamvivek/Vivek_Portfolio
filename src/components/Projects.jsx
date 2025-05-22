@@ -4,6 +4,11 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'PlanVoyage - Personalized Travel Recommendation Web App',
+      technologies: ['Next.js, Node.js, Express.js, MongoDB, TailwindCSS, JWT'],
+      description: 'PlanVoyage is a genome-based travel recommendation platform, modeled after Pandora’s music DNA concept. It intelligently matches users to destinations based on personalized travel preferences such as weather, budget, activities, and prior travel experiences.',
+    link: 'https://github.com/gaddamvivek/PlanVoyage-app'},
+    {
       title: 'AI based Smart Interview Preparation App (PrepSmart)',
       technologies: ['ReactJS', 'NodeJS', 'CSS', 'MongoDB', 'TypeScript'],
       description: 'Designed and developed a scalable smart interview preparation platform. The platform features AI-powered feedback systems leveraging machine learning to analyze code and oral interview responses, along with speech-to-text conversion for technical assessments. Real-time interview simulations were implemented using WebSocket for video recording, question narration, and performance tracking',
