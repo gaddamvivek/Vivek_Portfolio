@@ -10,7 +10,7 @@ const About = () => {
           <div className="about-text">
             <h3>Developer focused on creating user-centric software that bridges technical and business needs.</h3>
             <p>
-            Software Developer with 2+ years of experience in full-stack development, specializing in designing, developing, and testing scalable applications. Skilled in React.js, Python, and JavaScript with a focus on code efficiency, debugging, and software architecture. Proven ability to collaborate with cross-functional teams to deliver impactful solutions.
+            Software Developer with 3+ years of experience in full-stack development, specializing in designing, developing, and testing scalable applications. Skilled in React.js, Python, and JavaScript with a focus on code efficiency, debugging, and software architecture. Proven ability to collaborate with cross-functional teams to deliver impactful solutions.
             </p>
             <div className="about-details">
               <div>
@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className="about-stats">
             <div className="stat-box">
-              <h4>2+ Years</h4>
+              <h4>3+ Years</h4>
               <p>Experience</p>
             </div>
           </div>
