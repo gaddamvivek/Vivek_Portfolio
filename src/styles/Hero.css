@@ -44,6 +44,10 @@
 
 .hero-cta {
   margin-top: 2rem;
+  display: flex;
+  gap: 1rem; /* Equal space between buttons */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-content::before {
