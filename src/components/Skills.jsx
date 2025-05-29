@@ -21,7 +21,8 @@ const Skills = () => {
         { name: 'CSS/SASS', percentage: 90 },
         { name: 'Tailwind', percentage: 85 },
         { name: 'Drupal', percentage: 95 },
-        { name: 'React.js', percentage: 90 }
+        { name: 'React.js', percentage: 90 },
+        { name: 'Next.js', percentage: 80 }
       ]
     },
     {
@@ -31,6 +32,7 @@ const Skills = () => {
         { name: 'Express.js', percentage: 85 },
         { name: '.NET', percentage: 70 },
         { name: 'AWS', percentage: 85 },
+        { name: 'Azure', percentage: 80 },
         { name: 'RESTful APIs', percentage: 90 }
       ]
     },
@@ -44,7 +46,9 @@ const Skills = () => {
         { name: 'IntelliJ/Eclipse', percentage: 85 },
         { name: 'Linux', percentage: 80 },
         { name: 'Webpack/Vite', percentage: 75 },
-        { name: 'PowerShell', percentage: 70 }
+        { name: 'PowerShell', percentage: 70 },
+         { name: 'Kubernetes', percentage: 80 },  // Added
+      { name: 'Terraform', percentage: 80 } 
       ]
     },
     {
@@ -53,6 +57,7 @@ const Skills = () => {
         { name: 'Agile/Scrum', percentage: 90 },
         { name: 'JIRA', percentage: 85 },
         { name: 'Selenium', percentage: 80 },
+        { name: 'JUnit', percentage: 80 },
         { name: 'Software Design', percentage: 90 },
         { name: 'Kernel', percentage: 70 },
         { name: 'WordPress', percentage: 75 },
