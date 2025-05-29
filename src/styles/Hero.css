@@ -69,6 +69,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+    min-height: 120vh; /* Increased height to allow space for CTA */
+  }
   .hero-content {
     background-position: 50% 20%;
   }
