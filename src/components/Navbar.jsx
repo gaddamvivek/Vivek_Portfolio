@@ -82,6 +82,24 @@ const Navbar = () => {
             Projects
           </li>
           <li 
+            className={active === 'publications' ? 'active' : ''} 
+            onClick={() => handleClick('publications')}
+          >
+            Publications
+          </li>
+                <li 
+            className={active === 'Patents' ? 'active' : ''} 
+            onClick={() => handleClick('patents')}
+          >
+            Patents
+          </li>
+                    <li 
+            className={active === 'Certifications' ? 'active' : ''} 
+            onClick={() => handleClick('certifications')}
+          >
+            Certifications
+          </li>
+          <li 
             className={active === 'contact' ? 'active' : ''} 
             onClick={() => handleClick('contact')}
           >
