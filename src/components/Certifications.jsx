@@ -6,8 +6,17 @@ import javaCert from '../Assets/c2.jpg';
 import jsCert from '../Assets/c3.jpg';
 import pythonCert from '../Assets/c4.jpg';
 import webDevCert from '../Assets/c5.jpg';
+import awsCert from '../Assets/aws.jpg';
 
 const certifications = [
+    {
+    title: 'AWS Certified Developer - Associate',
+    issuer: 'Amazon Web Services',
+    id: '5863bc2dc6444be8b3402fbc2bbefb66',
+    skills: 'AWS Lambda • Serverless Architecture • CI/CD Pipelines',
+    file: awsCert,
+    fileType: 'image'
+  },
   {
     title: 'Database Programming with SQL',
     issuer: 'Oracle',

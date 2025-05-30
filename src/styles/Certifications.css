@@ -39,6 +39,7 @@
 
 .cert-card p {
   margin: 0.25rem 0;
+  font-size: small;
   color: #333;
 }
 
