@@ -7,6 +7,7 @@ import jsCert from '../Assets/c3.jpg';
 import pythonCert from '../Assets/c4.jpg';
 import webDevCert from '../Assets/c5.jpg';
 import awsCert from '../Assets/aws.jpg';
+import jpmcCert from '../Assets/jpmc.jpg';
 
 const certifications = [
     {
@@ -15,6 +16,15 @@ const certifications = [
     id: '5863bc2dc6444be8b3402fbc2bbefb66',
     skills: 'AWS Lambda • Serverless Architecture • CI/CD Pipelines',
     file: awsCert,
+    fileType: 'image'
+  },
+    {
+    title: 'Software Engineering Job Simulation',
+    issuer: 'JPMorgan via Forage',
+    date: 'June 2025',
+    skills: 'Project Setup • Kafka • H2 • REST API',
+    id: '3Ky5dCrbyTeNcwcZE',
+    file: jpmcCert,
     fileType: 'image'
   },
   {
