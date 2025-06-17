@@ -19,9 +19,14 @@ const Projects = () => {
       description: 'Developed a user-friendly e-commerce platform with seamless UI/UX, using MongoDB for storage and Docker for containerization',
     link: 'https://github.com/gaddamvivek/SoleCraft_E-Commerce-Platform'},
     {
-      title: 'Dual Communication System for Device Interaction',
-      technologies: ['C Language', 'Operating Systems'],
-      description: '{Developed a dual communication system using TCP/IP, pipes, and sockets for reliable device interaction and optimized data exchange',
+      title: 'Multi-Client Communication System using C',
+      technologies: ['C Language', 'Operating Systems, Data Structures'],
+      description: 'Developed a C-based multi-client chat system using named pipes and Unix system calls to enable concurrent messaging via centralized IPC on Linux.',
+    link: 'https://drive.google.com/file/d/1HX-OLCaoA8cG41HrgWEHanwk_wet0VKp/view?usp=sharing'},
+      {
+      title: 'Dual-Core Compiler Simulator:',
+      technologies: ['C Language', 'Adv. Computer Architecture, Data Structures'],
+      description: 'Built a dual-core compiler simulator in C to model instruction parsing, task dispatch, and parallel execution, simulating multicore processor behavior.',
     link: 'https://drive.google.com/file/d/1u0GFZLvrYPi8KSu8wArtWn19nftSd4yg/view?usp=sharing'},
     {
       title: 'Smart Precision Farming Using IoT Data Analytics',
