@@ -11,7 +11,7 @@ const Hero = () => {
         <h1>VIVEK GADDAM</h1>
         <h2>Software Developer</h2>
         <div className="hero-cta">
-          <a
+          {/* <a
             href={`${process.env.PUBLIC_URL}/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
@@ -19,7 +19,7 @@ const Hero = () => {
           >
             <FontAwesomeIcon icon={faFileAlt} style={{ marginRight: '8px' }} />
             View Resume
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/vivek-gaddam/"  // Replace with your actual LinkedIn URL
             target="_blank"
