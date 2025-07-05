@@ -6,79 +6,65 @@ const Experience = () => {
     <section id="experience" className="experience">
       <div className="container">
         <h2 className="section-title">Work Experience</h2>
-        
+
         <div className="experience-item">
           <h3>Software Developer</h3>
-          <h4>NYS Office of Information Technology Services for WebNY | May 2024 - Present</h4>
-          <ul>
-          <li>Built and optimized websites for NYS agencies using Drupal CMS, PHP, JavaScript, and Bootstrap, ensuring responsive and visually polished designs across all devices. Delivered seamless user experiences in compliance with WCAG and NYS Information Security Policies, improving accessibility and security.</li>
-  
-  <li>Enhanced over 50 Drupal modules, implementing custom authentication, role-based access controls, and security patches to mitigate vulnerabilities such as SQL injection, while boosting system performance by 40% through optimized queries, lazy loading, and caching strategies.</li>
-  
-  <li>Designed responsive, ADA-compliant interfaces using HTML, Twig, CSS, and SASS for all breakpoints. Increased page views by 30% and reduced load time by 50% by optimizing asset delivery, integrating CDNs, and improving navigation with mega menus and dynamic search filters.</li>
-  
-  <li>Applied UI/UX best practices through comprehensive visual reviews, prototyping, and usability testing to ensure intuitive layouts and seamless interactions.</li>
-  
-  <li>Conducted detailed code reviews to maintain efficient, optimized code, aligning design and functionality with user needs and accessibility standards.</li>
-  
-  <li>Developed custom modules for content approval workflows and multi-agency permissions, integrating real-time API connections to support scalable and secure backend processes, improving editorial efficiency by 50%.</li>
-  
-  <li>Implemented automated CI/CD pipelines using Jenkins and YAML configurations for Acquia Cloud and Docker deployments, reducing deployment errors by 60% and enhancing platform scalability and reliability.</li>
-  </ul>
+          <h4>NYS Office of Information Technology Services (WebNY) | May 2024 – Present</h4>
+          <div className="tags">
+            <span>Drupal</span><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>CI/CD</span><span>LINUX</span><span>Jenkins</span><span>WCAG</span><span>HTML/Twig</span><span>CSS/Sass</span><span>JIRA</span><span>Acquia Cloud</span>
+          </div>
+          <ul className="highlights">
+            <li>Optimized New York State websites for accessibility, responsiveness, and performance</li>
+            <li>Worked across frontend, backend, and DevOps to build secure, scalable web applications</li>
+            <li>Contributed to Agile development cycles with regular code reviews and CI/CD deployment support</li>
+
+
+          </ul>
         </div>
-        
+
         <div className="experience-item">
           <h3>Founder & CEO</h3>
-          <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2022 - April 2023</h4>
-          <ul>
-          <li>Led a student startup focused on converting prototypes into commercial products, delivering automation and secure IoT solutions for smart cities and agriculture.</li>
-  
-  <li>Developed React.js dashboards and Android apps with Firebase/AWS integration, enabling real-time analytics and reducing backend latency by 40%.</li>
-  
-  <li>Built ML models (Python) and Selenium automation tools for agricultural productivity predictions, reducing operational downtime by 35%.</li>
-  
-  <li>Commercialized 3 AI-powered prototypes, boosting cross-industry operational efficiency by 20% through automation.</li>
-  
-  <li>Applied OOP principles and algorithm optimization to create scalable apps with RESTful APIs, ensuring robust performance and security.</li>
-  
-  <li>Secured startup funding through data-driven investor pitches highlighting AI automation, driving 30% revenue growth.</li>
-  </ul>        </div>
+          <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2022 – April 2023</h4>
+          <div className="tags">
+            <span>React.js</span><span>Firebase</span><span>AWS</span><span>Python</span><span>Selenium</span><span>IoT</span><span>ML Models</span><span>REST APIs</span>
+          </div>
+          <ul className="highlights">
+            <li>Driven by a vision to empower young innovators in scaling ideas from prototypes to market-ready solutions</li>
+           <li>Contributed across product, engineering, and infrastructure to help scale the company as a full-spectrum developer</li>
+            <li>Closed seed funding by showcasing impact of predictive ML prototypes</li>
+          </ul>
+        </div>
 
-<div className="experience-item">
+        <div className="experience-item">
           <h3>Research Intern</h3>
-          <h4>NewGen Innovation Center, CVR College of Engineering | January 2021 - March 2022</h4>
-          <ul>
-          <li>
-    <strong>ML Optimization:</strong> Designed and implemented a machine learning model for environmental resource allocation in smart farming, optimizing water/fertilizer usage.
-  </li>
-  
-  <li>
-    <strong>Data Visualization:</strong> Developed a real-time agricultural dashboard (JavaScript/HTML/CSS) to visualize IoT sensor data for actionable insights.
-  </li>
-  
-  <li>
-    <strong>IoT Integration:</strong> Built Python/AWS-powered APIs for IoT sensors, enabling seamless data collection and processing from field devices.
-  </li>
-  
-  <li>
-    <strong>Predictive Prototype:</strong> Created an IoT/ML-powered weather station with 70% accuracy in precipitation forecasting for precision agriculture.
-  </li>
-  
-  <li>
-    <strong>Research Contribution:</strong> Evaluated system scalability/reliability, publishing findings in a Scopus-indexed journal.
-  </li>
-  
-  <li>
-    <strong>Process Automation:</strong> Reduced system latency by 40% through Python scripts automating real-time data analysis workflows.
-  </li>
-  </ul>      </div>
-        
+          <h4>NewGen Innovation Center, CVR College of Engineering | Jan 2021 – Mar 2022</h4>
+          <div className="tags">
+            <span>Python</span><span>C, C++</span><span>ML</span><span>IoT</span><span>AWS</span><span>Data Viz</span><span>JavaScript</span><span>Edge Devices</span><span>Sensor APIs</span>
+          </div>
+          <ul className="highlights">
+     <li>Conducted applied research in ML, AI, IoT systems, and programming for smart agriculture and automation</li>
+<li>Published 3 research papers in Scopus-indexed journals and co-invented 3 patents in precision farming and environmental monitoring</li>
+
+          </ul>
+        </div>
+
         <h2 className="section-title">Education</h2>
-        
+
         <div className="experience-item">
           <h3>Master of Science in Computer Science</h3>
-          <h4> University At Albany, State University of New York  |  August 2023 - May 2025 | Albany, NY </h4>
-          <p>Specialized in programming, problem solving and analytical skills.</p>
+          <h4>State University of New York, University at Albany, SUNY | August 2023 – May 2025</h4>
+         <p>Specialized in programming, problem solving, and system design.</p>
+<div className="tags">
+  <span>Operating Systems</span>
+  <span>Adv. Computer Architecture</span>
+  <span>Algorithms & Data Structures</span>
+  <span>Database Systems</span>
+  <span>Software Engineering</span>
+  <span>Artificial Intelligence</span>
+  <span>Automata Theory</span>
+  <span>Formal Languages</span>
+</div>
+
         </div>
       </div>
     </section>
