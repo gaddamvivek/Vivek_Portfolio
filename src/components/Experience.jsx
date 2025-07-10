@@ -23,7 +23,7 @@ const Experience = () => {
         </div>
 
         <div className="experience-item">
-          <h3>Founder & CEO</h3>
+          <h3>Founder/CEO & Software Developer</h3>
           <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2022 – April 2023</h4>
           <div className="tags">
             <span>React.js</span><span>Firebase</span><span>AWS</span><span>Python</span><span>Selenium</span><span>IoT</span><span>ML Models</span><span>REST APIs</span>
@@ -36,7 +36,7 @@ const Experience = () => {
         </div>
 
         <div className="experience-item">
-          <h3>Research Intern</h3>
+          <h3>Software Engineer Intern</h3>
           <h4>NewGen Innovation Center, CVR College of Engineering | Jan 2021 – Mar 2022</h4>
           <div className="tags">
             <span>Python</span><span>C, C++</span><span>ML</span><span>IoT</span><span>AWS</span><span>Data Viz</span><span>JavaScript</span><span>Edge Devices</span><span>Sensor APIs</span>
