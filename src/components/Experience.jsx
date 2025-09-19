@@ -8,7 +8,20 @@ const Experience = () => {
         <h2 className="section-title">Work Experience</h2>
 
         <div className="experience-item">
-          <h3>Software Developer</h3>
+            <h3>Software Engineer II</h3>
+            <h4>NYS Office of Information Technology - Strategy & Enterprise Architecture | June 2025 – Present</h4>
+            <div className="tags">
+              <span>Java</span><span>Spring Boot</span><span>Maven</span><span>Okta</span><span>OAuth 2.0</span><span>SAML</span><span>LDAP</span><span>Red Hat</span><span>IBM WebSphere</span><span>Microservices</span><span>REST APIs</span><span>JUnit</span>
+            </div>
+            <ul className="highlights">
+              <li>Architected enterprise-grade Identity Access Management solutions using Java and Spring Boot for large-scale government platforms</li>
+              <li>Developed secure authentication and authorization systems implementing industry-standard protocols and identity verification services</li>
+              <li>Built and maintained high-availability microservices architecture supporting millions of users with robust monitoring and testing frameworks</li>
+            </ul>
+          </div>
+          
+          <div className="experience-item">
+          <h3>Software Engineer</h3>
           <h4>NYS Office of Information Technology Services (WebNY) | May 2024 – Present</h4>
           <div className="tags">
             <span>Drupal</span><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>CI/CD</span><span>LINUX</span><span>Jenkins</span><span>WCAG</span><span>HTML/Twig</span><span>CSS/Sass</span><span>JIRA</span><span>Acquia Cloud</span>
