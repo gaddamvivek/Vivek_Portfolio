@@ -22,7 +22,7 @@ const Experience = () => {
           
           <div className="experience-item">
           <h3>Software Engineer</h3>
-          <h4>NYS Office of Information Technology Services (WebNY) | May 2024 – Present</h4>
+          <h4>NYS Office of Information Technology Services (WebNY) | May 2024 – May 2025</h4>
           <div className="tags">
             <span>Drupal</span><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>CI/CD</span><span>LINUX</span><span>Jenkins</span><span>WCAG</span><span>HTML/Twig</span><span>CSS/Sass</span><span>JIRA</span><span>Acquia Cloud</span>
           </div>
@@ -37,7 +37,7 @@ const Experience = () => {
 
         <div className="experience-item">
           <h3>Founder/CEO & Software Developer</h3>
-          <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2022 – April 2023</h4>
+          <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2021 – April 2023</h4>
           <div className="tags">
             <span>React.js</span><span>Firebase</span><span>AWS</span><span>Python</span><span>Selenium</span><span>IoT</span><span>ML Models</span><span>REST APIs</span>
           </div>
@@ -50,7 +50,7 @@ const Experience = () => {
 
         <div className="experience-item">
           <h3>Software Engineer Intern</h3>
-          <h4>NewGen Innovation Center, CVR College of Engineering | Jan 2021 – Mar 2022</h4>
+          <h4>NewGen Innovation Center, CVR College of Engineering | Jan 2020 – Mar 2021</h4>
           <div className="tags">
             <span>Python</span><span>C, C++</span><span>ML</span><span>IoT</span><span>AWS</span><span>Data Viz</span><span>JavaScript</span><span>Edge Devices</span><span>Sensor APIs</span>
           </div>

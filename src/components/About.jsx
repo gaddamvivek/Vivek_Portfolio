@@ -49,7 +49,7 @@ const About = () => {
           </div>
           <div className="about-stats">
             <div className="stat-box">
-              <h4>3+ Years</h4>
+              <h4>4+ Years</h4>
               <p>Experience</p>
             </div>
           </div>
