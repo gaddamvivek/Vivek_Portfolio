@@ -69,17 +69,23 @@ const Navbar = () => {
           >
             Experience
           </li>
-          <li 
-            className={active === 'skills' ? 'active' : ''} 
-            onClick={() => handleClick('skills')}
+          <li
+            className={active === 'featured' ? 'active' : ''}
+            onClick={() => handleClick('featured')}
           >
-            Skills
+            Featured
           </li>
-          <li 
-            className={active === 'projects' ? 'active' : ''} 
+          <li
+            className={active === 'projects' ? 'active' : ''}
             onClick={() => handleClick('projects')}
           >
             Projects
+          </li>
+          <li
+            className={active === 'skills' ? 'active' : ''}
+            onClick={() => handleClick('skills')}
+          >
+            Skills
           </li>
           <li 
             className={active === 'publications' ? 'active' : ''} 

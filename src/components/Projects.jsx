@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 import '../styles/Projects.css';
 
 const Projects = () => {
@@ -205,6 +206,8 @@ const Projects = () => {
           ))}
         </div>
       </section>
+
+      <Skills />
 
       <section className="projects section-alt" id="publications">
         <h2 className="section-title">Publications</h2>
