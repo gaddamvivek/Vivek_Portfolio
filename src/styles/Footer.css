@@ -1,7 +1,7 @@
-/* Footer.css - Enhanced with Better Visual Design */
+/* Footer.css */
 .footer {
-  background: linear-gradient(135deg, var(--secondary-color), #1a252f);
-  color: white;
+  background: linear-gradient(180deg, var(--bg-dark) 0%, #060612 100%);
+  color: var(--text-color);
   padding: 4rem 0 2rem;
   text-align: center;
   position: relative;
@@ -14,23 +14,18 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark), var(--primary-color));
-  background-size: 200% 100%;
-  animation: gradient-shift 3s ease infinite;
-}
-
-@keyframes gradient-shift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  opacity: 0.4;
 }
 
 .footer .container {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -47,33 +42,28 @@
   margin-bottom: 0.5rem;
   font-weight: 700;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, white, rgba(255, 255, 255, 0.8));
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .footer-content p {
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   margin-bottom: 1.5rem;
-  color: rgba(236, 240, 241, 0.9);
+  color: var(--text-light);
   font-weight: 500;
 }
 
 .footer-copyright {
-  font-size: clamp(0.85rem, 2vw, 0.95rem);
-  color: rgba(189, 195, 199, 0.8);
+  font-size: clamp(0.85rem, 2vw, 0.92rem);
+  color: var(--text-muted);
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  transition: var(--transition);
+  border-top: 1px solid var(--border-color);
 }
 
-.footer-copyright:hover {
-  color: rgba(189, 195, 199, 1);
-}
-
-/* Tablet Styles */
+/* Tablet */
 @media (max-width: 1024px) {
   .footer {
     padding: 3.5rem 0 1.75rem;
@@ -84,7 +74,7 @@
   }
 }
 
-/* Mobile Styles */
+/* Mobile */
 @media (max-width: 768px) {
   .footer {
     padding: 3rem 0 1.5rem;
@@ -100,7 +90,7 @@
   }
 }
 
-/* Small Mobile Styles */
+/* Small Mobile */
 @media (max-width: 480px) {
   .footer {
     padding: 2.5rem 0 1.25rem;

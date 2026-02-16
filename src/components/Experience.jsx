@@ -11,27 +11,27 @@ const Experience = () => {
             <h3>Software Engineer II</h3>
             <h4>NYS Office of Information Technology - Strategy & Enterprise Architecture | June 2025 – Present</h4>
             <div className="tags">
-              <span>Java</span><span>Spring Boot</span><span>Maven</span><span>Okta</span><span>OAuth 2.0</span><span>SAML</span><span>LDAP</span><span>Red Hat</span><span>IBM WebSphere</span><span>Microservices</span><span>REST APIs</span><span>JUnit</span>
+              <span>Angular</span><span>Spring Boot</span><span>Oracle DB</span><span>Node.js</span><span>Express.js</span><span>Flask</span><span>PostgreSQL</span><span>OAuth 2.0</span><span>SAML</span><span>LDAP</span><span>DAWS</span><span>Red Hat</span><span>IBM WebSphere</span><span>Docker</span><span>Helm</span><span>OpenShift</span><span>GitLab CI/CD</span><span>SonarQube</span><span>Dynatrace</span><span>Microservices</span>
             </div>
             <ul className="highlights">
-              <li>Architected enterprise-grade Identity Access Management solutions using Java and Spring Boot for large-scale government platforms</li>
-              <li>Developed secure authentication and authorization systems implementing industry-standard protocols and identity verification services</li>
-              <li>Built and maintained high-availability microservices architecture supporting millions of users with robust monitoring and testing frameworks</li>
+              <li>Built self-service Developer Portal for NY State agencies using Angular, Spring Boot, and Oracle DB, enabling identity verification onboarding via a guided wizard workflow</li>
+              <li>Built full-stack password management app for NY.GOV ID IAM platform (20M+ users) using Angular, Spring Boot, OAuth 2.0/SAML, and LDAP, reducing verification time by 40%</li>
+              <li>Developed Flask-based bulk upload automation with DAWS/SOAP integration and PostgreSQL, cutting user provisioning time by 85%</li>
+              <li>Engineered Tier 0 IAM infrastructure using Red Hat Directory Server and IBM WebSphere microservices, achieving 90% uptime across all NY.GOV ID systems</li>
+              <li>Containerized and shipped applications to OpenShift using Docker, Helm, and GitLab CI/CD, integrating SonarQube, OWASP ZAP, and Elastic APM</li>
             </ul>
           </div>
-          
+
           <div className="experience-item">
           <h3>Software Engineer</h3>
           <h4>NYS Office of Information Technology Services (WebNY) | May 2024 – May 2025</h4>
           <div className="tags">
-            <span>Drupal</span><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>CI/CD</span><span>LINUX</span><span>Jenkins</span><span>WCAG</span><span>HTML/Twig</span><span>CSS/Sass</span><span>JIRA</span><span>Acquia Cloud</span>
+            <span>Drupal</span><span>PHP</span><span>JavaScript</span><span>TypeScript</span><span>HTML5/CSS3</span><span>Twig</span><span>Bootstrap</span><span>WCAG</span><span>Acquia Cloud</span><span>CI/CD</span><span>GitHub Actions</span><span>Docker</span><span>JIRA</span>
           </div>
           <ul className="highlights">
-            <li>Optimized New York State websites for accessibility, responsiveness, and performance</li>
-            <li>Worked across frontend, backend, and DevOps to build secure, scalable web applications</li>
-            <li>Contributed to Agile development cycles with regular code reviews and CI/CD deployment support</li>
-
-
+            <li>Maintained 10+ platforms using Drupal, PHP, and JavaScript with WCAG standards on Acquia Cloud, reducing vulnerabilities by 70%</li>
+            <li>Optimized HTML5, CSS3, and Twig templates, achieving 50% reduction in page load times across state web properties</li>
+            <li>Established CI/CD pipelines with GitHub Actions and Docker, cutting production rollback incidents by 60%</li>
           </ul>
         </div>
 
@@ -39,12 +39,12 @@ const Experience = () => {
           <h3>Founder/CEO & Software Developer</h3>
           <h4>EFORGE NexGen Innovations Pvt. Ltd. | March 2021 – April 2023</h4>
           <div className="tags">
-            <span>React.js</span><span>Firebase</span><span>AWS</span><span>Python</span><span>Selenium</span><span>IoT</span><span>ML Models</span><span>REST APIs</span>
+            <span>Python</span><span>Go</span><span>C++</span><span>C#</span><span>AWS</span><span>Linux</span><span>Docker</span><span>AI/IoT</span><span>ML</span><span>Android</span><span>REST APIs</span>
           </div>
           <ul className="highlights">
-            <li>Driven by a vision to empower young innovators in scaling ideas from prototypes to market-ready solutions</li>
-           <li>Contributed across product, engineering, and infrastructure to help scale the company as a full-spectrum developer</li>
-            <li>Closed seed funding by showcasing impact of predictive ML prototypes</li>
+            <li>Created scalable Python backends on AWS/Linux for AI/IoT platforms, reducing processing latency by 50%</li>
+            <li>Deployed ML-powered analytics dashboards with real-time inference on cross-platform Android apps using Docker, achieving 35% workflow automation gains</li>
+            <li>Mentored 5+ engineers in ML system design and model deployment</li>
           </ul>
         </div>
 
@@ -52,12 +52,11 @@ const Experience = () => {
           <h3>Software Engineer Intern</h3>
           <h4>NewGen Innovation Center, CVR College of Engineering | Jan 2020 – Mar 2021</h4>
           <div className="tags">
-            <span>Python</span><span>C, C++</span><span>ML</span><span>IoT</span><span>AWS</span><span>Data Viz</span><span>JavaScript</span><span>Edge Devices</span><span>Sensor APIs</span>
+            <span>Python</span><span>C/C++</span><span>ML</span><span>IoT</span><span>AWS</span><span>Data Analytics</span>
           </div>
           <ul className="highlights">
-     <li>Conducted applied research in ML, AI, IoT systems, and programming for smart agriculture and automation</li>
-<li>Published 3 research papers in Scopus-indexed journals and co-invented 3 patents in precision farming and environmental monitoring</li>
-
+            <li>Developed ML solutions in Python and C++ for IoT-based smart farming, improving resource management by 25%</li>
+            <li>Published 3 research papers in Scopus-indexed journals and co-invented 3 patents in precision farming and environmental monitoring</li>
           </ul>
         </div>
 

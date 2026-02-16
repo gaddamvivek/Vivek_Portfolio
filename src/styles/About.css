@@ -1,166 +1,168 @@
-/* About.css - Enhanced with Better Layout and Spacing */
+/* About.css */
 .about {
-  padding: 5rem 0;
-  background-color: var(--bg-light);
-  position: relative;
+  padding: var(--section-padding);
+  background-color: var(--bg-section-alt);
 }
 
 .about .container {
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .about .section-title {
-  font-size: clamp(2rem, 4vw, 2.5rem);
-  color: var(--secondary-color);
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--text-color);
   margin-bottom: 3rem;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  position: relative;
+  padding-bottom: 1.25rem;
+}
+
+.about .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+  border-radius: 2px;
 }
 
 .about .about-content {
   display: flex;
-  gap: 4rem;
+  gap: 3.5rem;
   align-items: flex-start;
 }
 
 .about .about-text {
   flex: 2;
-  animation: fadeIn 0.8s ease-out;
 }
 
 .about .about-text h3 {
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   color: var(--primary-color);
   margin-bottom: 1.5rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .about .about-text p {
-  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text-light);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   text-align: justify;
 }
 
 .about .about-text p strong {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: 600;
 }
 
 .about .about-text .about-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
   margin: 2rem 0;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
-  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
 }
 
 .about .about-text .about-details div {
-  padding: 0.5rem;
+  padding: 0.4rem;
+  color: var(--text-light);
+  font-size: 0.92rem;
 }
 
 .about .about-text .about-details div strong {
-  color: var(--secondary-color);
-  font-weight: 700;
+  color: var(--primary-color);
+  font-weight: 600;
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .about .about-text blockquote {
   font-style: italic;
-  color: var(--secondary-color);
-  border-left: 5px solid var(--primary-color);
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
-  margin: 2.5rem 0;
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  background: rgba(52, 152, 219, 0.05);
+  color: var(--text-light);
+  border-left: 3px solid var(--primary-color);
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  background: rgba(0, 212, 170, 0.03);
   border-radius: 0 8px 8px 0;
   line-height: 1.7;
   position: relative;
 }
 
 .about .about-text blockquote::before {
-  content: '"';
-  font-size: 4rem;
+  content: '\201C';
+  font-size: 3rem;
   color: var(--primary-color);
-  opacity: 0.3;
+  opacity: 0.2;
   position: absolute;
-  top: -10px;
-  left: 10px;
+  top: -5px;
+  left: 8px;
   font-family: Georgia, serif;
 }
 
 .about .about-stats {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  animation: fadeIn 0.8s ease-out 0.3s both;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
 }
 
 .about .about-stats .stat-box {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 248, 250, 0.9));
-  padding: 2.5rem;
-  border-radius: 16px;
+  background: var(--bg-card);
+  padding: 1.75rem 1.25rem;
+  border-radius: 12px;
   text-align: center;
-  box-shadow: var(--shadow-md);
-  width: 100%;
-  max-width: 220px;
-  transition: var(--transition);
-  border: 2px solid rgba(52, 152, 219, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .about .about-stats .stat-box:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 212, 170, 0.12);
 }
 
 .about .about-stats .stat-box h4 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.2rem);
   color: var(--primary-color);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
   font-weight: 800;
 }
 
 .about .about-stats .stat-box p {
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-size: 0.75rem;
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: 600;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Tablet Styles */
+/* Tablet */
 @media (max-width: 1024px) {
   .about .about-content {
-    gap: 3rem;
+    gap: 2.5rem;
   }
 }
 
-/* Mobile Styles */
+/* Mobile */
 @media (max-width: 768px) {
   .about {
-    padding: 3rem 0;
+    padding: var(--section-padding-mobile);
   }
 
   .about .container {
@@ -169,7 +171,7 @@
 
   .about .about-content {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .about .about-text p {
@@ -177,32 +179,31 @@
   }
 
   .about .about-text .about-details {
-    grid-template-columns: 1fr;
-    padding: 1.25rem;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .about .about-stats .stat-box {
-    max-width: 100%;
+  .about .about-stats {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
 }
 
-/* Small Mobile Styles */
+/* Small Mobile */
 @media (max-width: 480px) {
   .about {
-    padding: 2.5rem 0;
+    padding: 3rem 0;
   }
 
   .about .container {
     padding: 0 1rem;
   }
 
-  .about .about-text blockquote {
-    padding: 1.25rem 1rem 1.25rem 1.5rem;
-    margin: 2rem 0;
+  .about .about-text .about-details {
+    grid-template-columns: 1fr;
+    padding: 1rem;
   }
 
-  .about .about-text .about-details {
-    padding: 1rem;
-    gap: 1rem;
+  .about .about-stats .stat-box {
+    padding: 1.25rem 1rem;
   }
 }

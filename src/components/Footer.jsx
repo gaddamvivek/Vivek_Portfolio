@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <h3>Vivek Gaddam</h3>
-          <p>Software Developer | Data Engineer | Full-Stack</p>
+          <p>Software Engineer | AI/ML | Full-Stack</p>
           <div className="footer-copyright">
-            © 2025 Vivek Gaddam. All rights reserved.
+            &copy; 2026 Vivek Gaddam. All rights reserved.
           </div>
         </div>
       </div>

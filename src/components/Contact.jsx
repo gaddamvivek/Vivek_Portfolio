@@ -1,70 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/Contact.css';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
-
-  // Initialize EmailJS
-  useEffect(() => {
-    emailjs.init(process.env.REACT_APP_EMAILJS_USER_ID);
-  }, []);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear status when user starts typing again
-    if (submitStatus) {
-      setSubmitStatus(null);
-    }
-  };
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    const form = e.target;
+    const data = new FormData(form);
+
     try {
-      // Using emailjs.sendForm for better compatibility
-      const result = await emailjs.sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        e.target,
-        process.env.REACT_APP_EMAILJS_USER_ID
-      );
-
-      console.log('Email sent successfully:', result);
-      setSubmitStatus('success');
-
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
+      const response = await fetch('https://formspree.io/gaddamvivek01@gmail.com', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
       });
 
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    } catch (error) {
-      console.error('Email send error:', error);
+      if (response.ok) {
+        setSubmitStatus('success');
+        form.reset();
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch {
       setSubmitStatus('error');
-
-      // Clear error message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => setSubmitStatus(null), 5000);
     }
   };
 
@@ -72,32 +38,31 @@ const Contact = () => {
     <section className="contact" id="contact">
       <div className="container">
         <h2 className="section-title">Contact</h2>
-        
+
         <div className="contact-container">
           <div className="contact-info">
-            <h3>Location:</h3>
-            <p>Albany, NY, 12203</p>
-            
-            <h3>Email:</h3>
+            <h3>Email</h3>
             <p>gaddamvivek01@gmail.com</p>
-            
-            <h3>Call:</h3>
+
+            <h3>Phone</h3>
             <p>+1 (518) 844 3684</p>
+
+            <h3>Availability</h3>
+            <p>Open to full-time opportunities</p>
           </div>
-          
+
           <div className="contact-form">
             <h3>Get in Touch</h3>
 
-            {/* Success/Error Messages */}
             {submitStatus === 'success' && (
               <div className="alert alert-success">
-                <strong>Success!</strong> Your message has been sent successfully. I'll get back to you soon!
+                <strong>Success!</strong> Your message has been sent. I'll get back to you soon!
               </div>
             )}
 
             {submitStatus === 'error' && (
               <div className="alert alert-error">
-                <strong>Error!</strong> Failed to send message. Please try again or email me directly at gaddamvivek01@gmail.com
+                <strong>Error!</strong> Failed to send. Please email me directly at gaddamvivek01@gmail.com
               </div>
             )}
 
@@ -107,8 +72,6 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="Your Name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   disabled={isSubmitting}
                 />
@@ -118,8 +81,6 @@ const Contact = () => {
                   type="email"
                   name="email"
                   placeholder="Your Email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   disabled={isSubmitting}
                 />
@@ -129,8 +90,6 @@ const Contact = () => {
                   type="text"
                   name="subject"
                   placeholder="Subject"
-                  value={formData.subject}
-                  onChange={handleChange}
                   disabled={isSubmitting}
                 />
               </div>
@@ -138,8 +97,6 @@ const Contact = () => {
                 <textarea
                   name="message"
                   placeholder="Message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   disabled={isSubmitting}
                 ></textarea>
@@ -149,7 +106,7 @@ const Contact = () => {
                 disabled={isSubmitting}
                 className={isSubmitting ? 'submitting' : ''}
               >
-                {isSubmitting ? 'Sending...' : 'Submit'}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>

@@ -8,25 +8,21 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <div className="about-text">
-            <h3>Developer focused on creating user-centric software that bridges technical and business needs.</h3>
+            <h3>Full-Stack Software Engineer building scalable applications and intelligent systems.</h3>
          <p>
-  Versatile Software Developer with 3+ years of experience delivering end-to-end solutions across full-stack, frontend, backend, DevOps, and AI/ML domains. Adept at designing, developing, testing, and deploying scalable web and cloud-native applications with a strong focus on performance, security, and user experience.
+  Full-Stack Software Engineer with 4+ years building scalable web applications and automation systems. Expertise in developing end-to-end solutions from <strong>REST APIs</strong> to responsive frontends, with production deployments on <strong>AWS</strong>, <strong>Docker</strong>, and <strong>Kubernetes</strong>. Delivered enterprise platforms achieving 85% reduction in manual processes and 40% faster response times through optimized backend architectures.
 </p>
 
 <p>
-  Proficient in modern frontend frameworks like <strong>React.js</strong> and <strong>Next.js</strong>, and backend technologies such as <strong>Node.js</strong>, <strong>Python (Flask)</strong>, and <strong>Java (Spring Boot)</strong>. Experienced in working with <strong>REST APIs</strong>, <strong>MongoDB</strong>, <strong>PostgreSQL</strong>, and implementing real-time data pipelines.
+  Proficient across multiple technology stacks including <strong>Python</strong>, <strong>Java (Spring Boot)</strong>, <strong>C#/.NET</strong>, <strong>Go</strong>, <strong>Angular</strong>, <strong>React.js</strong>, and <strong>Node.js</strong>. Experienced in building identity and access management systems using <strong>OAuth 2.0</strong>, <strong>SAML</strong>, and <strong>LDAP</strong> for platforms serving 20M+ users.
 </p>
 
 <p>
-  Hands-on with DevOps practices, including <strong>CI/CD pipelines</strong>, <strong>Docker</strong>, <strong>Acquia</strong>, <strong>Kubernetes</strong>, <strong>AWS</strong>, and infrastructure as code using <strong>Terraform</strong>, ensuring reliable, secure, and automated deployments across environments.
+  Strong background in <strong>AI/ML</strong>, with hands-on experience in <strong>TensorFlow</strong>, <strong>PyTorch</strong>, <strong>OpenAI API</strong>, <strong>LangChain</strong>, and <strong>NLP</strong> frameworks. Published researcher with 4 papers in Scopus-indexed journals and 3 patents in precision farming and environmental monitoring.
 </p>
 
 <p>
-  In the AI/ML domain, familiar with <strong>model training</strong>, <strong>data preprocessing</strong>, and integrating machine learning models into production systems using tools like <strong>scikit-learn</strong> and <strong>Pandas</strong>. Enthusiastic about building data-driven applications that enhance decision-making and deliver intelligent features to end users.
-</p>
-
-<p>
-  Proven ability to thrive in agile, cross-functional teams, lead features from concept to launch, and consistently improve system architecture and developer workflows to maximize performance, maintainability, and scalability.
+  Hands-on with <strong>DevOps</strong> and cloud infrastructure including <strong>CI/CD pipelines</strong>, <strong>Docker</strong>, <strong>OpenShift</strong>, <strong>Helm</strong>, and <strong>AWS</strong>, ensuring reliable, secure, and automated deployments across enterprise environments.
 </p>
 
             <div className="about-details">
@@ -35,9 +31,6 @@ const About = () => {
               </div>
               <div>
                 <strong>Email:</strong> gaddamvivek01@gmail.com
-              </div>
-              <div>
-                <strong>Location:</strong> Albany, NY
               </div>
               <div>
                 <strong>Availability:</strong> Full-time
@@ -49,8 +42,20 @@ const About = () => {
           </div>
           <div className="about-stats">
             <div className="stat-box">
-              <h4>4+ Years</h4>
-              <p>Experience</p>
+              <h4>4+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div className="stat-box">
+              <h4>3</h4>
+              <p>Patents</p>
+            </div>
+            <div className="stat-box">
+              <h4>4</h4>
+              <p>Publications</p>
+            </div>
+            <div className="stat-box">
+              <h4>7+</h4>
+              <p>Projects</p>
             </div>
           </div>
         </div>

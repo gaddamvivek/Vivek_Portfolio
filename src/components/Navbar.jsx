@@ -88,13 +88,13 @@ const Navbar = () => {
             Publications
           </li>
                 <li 
-            className={active === 'Patents' ? 'active' : ''} 
+            className={active === 'patents' ? 'active' : ''}
             onClick={() => handleClick('patents')}
           >
             Patents
           </li>
                     <li 
-            className={active === 'Certifications' ? 'active' : ''} 
+            className={active === 'certifications' ? 'active' : ''}
             onClick={() => handleClick('certifications')}
           >
             Certifications
