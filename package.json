@@ -3,7 +3,7 @@
   "description": "Vivek Gaddam's Software Developer Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gaddamvivek.github.io/Vivek_Portfolio",
+  "homepage": "https://vivekgaddam.dev",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
