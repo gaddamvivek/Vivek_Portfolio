@@ -74,7 +74,8 @@ const Projects = () => {
       publicationNumber: '12/2023',
       filingDate: 'February 10, 2023',
       publicationDate: 'March 24, 2023',
-      authority: 'Intellectual Property India (Indian Patent Office)'
+      authority: 'Intellectual Property India (Indian Patent Office)',
+      link: 'https://drive.google.com/file/d/1c5y4b7HRFim99SiTbXrfZK0Bvg9esqp9/view?usp=sharing'
     },
     {
       title: 'Machine Learning Powered IoT Weather Station to Predict the Rate of Urbanization',
@@ -82,7 +83,8 @@ const Projects = () => {
       publicationNumber: '12/2023',
       filingDate: 'February 10, 2023',
       publicationDate: 'March 24, 2023',
-      authority: 'Intellectual Property India (Indian Patent Office)'
+      authority: 'Intellectual Property India (Indian Patent Office)',
+      link: 'https://drive.google.com/file/d/1ZH_0eoZF3Gv_LubXzz-20yFsrVMEPprH/view?usp=sharing'
     },
     {
       title: 'Data Analytics Powered IoT Weather Station to Determine the AQI Index in a Micro Climatic Zone',
@@ -90,7 +92,8 @@ const Projects = () => {
       publicationNumber: '18/2023',
       filingDate: 'April 17, 2023',
       publicationDate: 'May 05,2023',
-      authority: 'Intellectual Property India (Indian Patent Office)'
+      authority: 'Intellectual Property India (Indian Patent Office)',
+      link: 'https://drive.google.com/file/d/1aKVw36Uiu4djiPfx5tYnUDpEpKaHz4Da/view?usp=sharing'
     }
   ];
 
@@ -154,6 +157,11 @@ const Projects = () => {
                   <p><strong>Publication Date:</strong> {patent.publicationDate}</p>
                 )}
               </div>
+              {patent.link && (
+                <a href={patent.link} className="btn" target="_blank" rel="noopener noreferrer">
+                  View Patent
+                </a>
+              )}
             </div>
           ))}
         </div>
