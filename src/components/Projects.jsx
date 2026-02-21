@@ -5,18 +5,6 @@ import '../styles/Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'AI-Driven Precision Agriculture Platform',
-      technologies: ['Python', 'Android Studio', 'JavaScript', 'IoT', 'Selenium', 'TensorFlow', 'FastAPI', 'React'],
-      highlights: [
-        'Developed ML-powered crop yield prediction achieving 90% accuracy using ensemble methods (Random Forest + XGBoost)',
-        'Built real-time IoT data pipeline processing 10K+ sensor readings/hour for soil analysis and irrigation optimization',
-        'Deployed TensorFlow models on Android via Docker for edge computing, reducing cloud costs by 60%',
-        'Implemented data analytics dashboard with Python/FastAPI backend and React frontend',
-        'Impact: 25% resource optimization | Published: 3 patents + Scopus-indexed research papers',
-      ],
-      link: 'https://www.philstat.org/index.php/MSEA/article/view/1450',
-    },
-    {
       title: 'PrepSmart - AI-Powered Technical Interview Platform',
       technologies: ['React.js', 'Node.js', 'TypeScript', 'MongoDB', 'WebSocket', 'NLP'],
       highlights: [
@@ -26,7 +14,7 @@ const Projects = () => {
         'Architecture: Node.js microservices, MongoDB for user analytics, WebSocket for real-time features',
         'Performance: Supports 1,000+ concurrent interview sessions with <500ms response time',
       ],
-      link: 'https://github.com/gaddamvivek/SmartPrep_Interview-Platform',
+      link: 'https://smart-prep-vivek.vercel.app/',
     },
     {
       title: 'Enterprise E-Commerce Platform with Microservices',
@@ -38,7 +26,7 @@ const Projects = () => {
         'Integrated Stripe payment processing with webhook validation and transaction logging',
         'Metrics: 99.9% uptime, <200ms API response time (p95)',
       ],
-      link: 'https://github.com/gaddamvivek/SoleCraft_E-Commerce-Platform',
+      link: 'https://solecraft-e-commerce-platform.onrender.com/',
     },
     {
       title: 'PlanVoyage - AI-Powered Travel Recommendation Engine',
@@ -49,7 +37,19 @@ const Projects = () => {
         'Integrated real-time weather and budget data via third-party APIs',
         'Modeled after Pandora\'s music DNA concept for intelligent travel matching',
       ],
-      link: 'https://github.com/gaddamvivek/PlanVoyage-app',
+      link: 'https://plan-voyage-vivek.vercel.app/',
+    },
+      {
+      title: 'AI-Driven Precision Agriculture Platform',
+      technologies: ['Python', 'Android Studio', 'JavaScript', 'IoT', 'Selenium', 'TensorFlow', 'FastAPI', 'React'],
+      highlights: [
+        'Developed ML-powered crop yield prediction achieving 90% accuracy using ensemble methods (Random Forest + XGBoost)',
+        'Built real-time IoT data pipeline processing 10K+ sensor readings/hour for soil analysis and irrigation optimization',
+        'Deployed TensorFlow models on Android via Docker for edge computing, reducing cloud costs by 60%',
+        'Implemented data analytics dashboard with Python/FastAPI backend and React frontend',
+        'Impact: 25% resource optimization | Published: 3 patents + Scopus-indexed research papers',
+      ],
+      link: 'https://gadamvivek01-precisionfarming.hf.space/',
     },
     {
       title: 'Multi-Client Communication System',
