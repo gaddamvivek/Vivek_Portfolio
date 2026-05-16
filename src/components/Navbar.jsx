@@ -70,6 +70,12 @@ const Navbar = () => {
             Experience
           </li>
           <li
+            className={active === 'ai-profile' ? 'active' : ''}
+            onClick={() => handleClick('ai-profile')}
+          >
+            AI
+          </li>
+          <li
             className={active === 'featured' ? 'active' : ''}
             onClick={() => handleClick('featured')}
           >
