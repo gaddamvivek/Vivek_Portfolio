@@ -10,7 +10,7 @@ const About = () => {
           <div className="about-text">
             <h3>Full-Stack Software Engineer building scalable applications and intelligent systems.</h3>
          <p>
-  Full-Stack Software Engineer with 4+ years building scalable web applications and automation systems. Expertise in developing end-to-end solutions from <strong>REST APIs</strong> to responsive frontends, with production deployments on <strong>AWS</strong>, <strong>Docker</strong>, and <strong>Kubernetes</strong>. Delivered enterprise platforms achieving 85% reduction in manual processes and 40% faster response times through optimized backend architectures.
+  Full-Stack Software Engineer with years of experience building scalable web applications and automation systems. Expertise in developing end-to-end solutions from <strong>REST APIs</strong> to responsive frontends, with production deployments on <strong>AWS</strong>, <strong>Docker</strong>, and <strong>Kubernetes</strong>. Delivered enterprise platforms achieving 85% reduction in manual processes and 40% faster response times through optimized backend architectures.
 </p>
 
 <p>
@@ -33,7 +33,10 @@ const About = () => {
                 <strong>Email:</strong> gaddamvivek01@gmail.com
               </div>
               <div>
-                <strong>Availability:</strong> Full-time
+                <strong>Location:</strong> United States | Willing to Relocate
+              </div>
+              <div>
+                <strong>Availability:</strong> C2C | Contract | Full-time 
               </div>
             </div>
             <blockquote>
@@ -41,10 +44,10 @@ const About = () => {
             </blockquote>
           </div>
           <div className="about-stats">
-            <div className="stat-box">
-              <h4>4+</h4>
-              <p>Years Experience</p>
-            </div>
+            {/* <div className="stat-box">
+              <h4>Years</h4>
+              <p>Experience</p>
+            </div> */}
             <div className="stat-box">
               <h4>3</h4>
               <p>Patents</p>

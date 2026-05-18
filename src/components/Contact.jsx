@@ -48,7 +48,7 @@ const Contact = () => {
             <p>+1 (518) 844 3684</p>
 
             <h3>Availability</h3>
-            <p>Open to full-time opportunities</p>
+            <p>Open to Contract or C2C roles | Full-time opportunities</p>
           </div>
 
           <div className="contact-form">
